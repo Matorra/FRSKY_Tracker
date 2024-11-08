@@ -38,7 +38,9 @@ The data you see in the image are taken from an Archer+ GR8 receiver that has a 
 Install the application.
 Download the application and install it, then you must activate your MAC-Address with the following instructions.
 
-In order to continue with the work of developing applications on FRSKY radio telemetry, we ask the collaboration of the users of the same a contribution of 10 € that you can make effective by paypal to the email ma.torra@telefonica.net . Additionally, we need you to send us via email the Local address, which you can find in your radio in the Telemetry option of your model. I will send you a QR code to activate your app for your radio station, the app only works with your radio, it guarantees that it only connects with your radio station and not others in your area. This payment is one-time and is not required for future updates and improvements to the app.
+In order to continue with the work of developing applications on FRSKY radio telemetry, we ask the collaboration of the users of the same a contribution of 10 € that you can make effective by paypal to the  paypal.me/matorra . Additionally, we need you to send us via email ma.torra@telefonica.net the Local address, which you can find in your radio in the Telemetry option of your model. I will send you a QR code to activate your app for your radio station, the app only works with your radio, it guarantees that it only connects with your radio station and not others in your area. This payment is one-time and is not required for future updates and improvements to the app.
+
+The app will ask for permission to access the camera by scanning the QR code. It will then ask for Bluetooth access and must have access to the location to position the pilot. It has no other permissions and does not have advertising.
 
 
 ![20241107_171816](https://github.com/user-attachments/assets/493d327e-3ed5-46c9-bbc7-dcc3d3eb300b)
