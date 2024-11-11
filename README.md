@@ -40,11 +40,18 @@ The conversion factors in some cases such as Latitude, Longitude, Time and Speed
 
 
 The data you see in the image are taken from an Archer+ GR8 receiver that has a Bariometer and a GPS manufactured with the technique described in the mstrens/oXs_on_RP2040 repository ( https://github.com/mstrens/oXs_on_RP2040 ) . The results of this are excellent and we recommend its use.
+
 Install the application.
-Download the application and install it, then you must activate your MAC-Address with the following instructions.
+-Download the application and install it, then you must activate your MAC-Address with the following instructions:
 
 In order to continue with the work of developing applications on FRSKY radio telemetry, we ask the collaboration of the users a contribution of 10 €, that you can make effective by paypal to the  paypal.me/matorra . Additionally, we need you to send us via email ma.torra@telefonica.net the Local address, which you can find in your radio in the Telemetry option of your model. I will send you a QR code to activate your app for your radio station, the app only works with your radio, it guarantees that it only connects with your radio station and not others in your area. This payment is one-time and is not required for future updates and improvements to the app.
 
 The app will ask for permission to access the camera by scanning the QR code. It will then ask for Bluetooth access and must have access to the location to position the pilot. It has no other permissions and does not have advertising.
 
 ![20241107_171816](https://github.com/user-attachments/assets/493d327e-3ed5-46c9-bbc7-dcc3d3eb300b)
+
+Notes on FRSKY bluetooth telemetry.
+The bluetooth option of FRSKY telemetry mirrors the communication bus of the receiver and transmitter. This is s.port communication.
+This data is not affected by any modifications you make to your transmitter, anything you do to your transmitter in relation to telemetry only affects the telemetry display on it.
+Except for some signals such as GPS Latitude and Longitude, time, rx battery voltage. Almost all signals are transmitted as integer values ​​for greater accuracy they are multiplied by a factor of 100 or 10 etc. It is also possible that the signal transmission is done in units other than the metric system. For example GPS speed is transmitted in knots multiplied by 100 so we have to put a conversion factor to display it as K/h.
+This can be changed in the configuration screen where you can even create new signals. To do this, once you have entered the screen, enter the number that appears in the signal telemetry as the ID, which is a four-digit hexadecimal number (if the first one is zero, it is not entered) and complete the configuration data. Once modified, when you return to the data screen, it will appear in the list of received data.
